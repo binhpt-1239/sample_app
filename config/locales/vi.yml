@@ -1,6 +1,7 @@
 vi:
   title: "Dự án mẫu Ruby on Rails"
   hello: "Xin chào thế giới!"
+  app_name: "Dự án mẫu"
   viet: "Tiếng Việt"
   eng:  "Tiếng Anh "
   home: "Trang chủ"

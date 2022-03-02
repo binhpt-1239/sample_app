@@ -1,6 +1,7 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
+  app_name: "sample app"
   viet: "Vietnamese"
   eng:  "English"
   home: "Home"

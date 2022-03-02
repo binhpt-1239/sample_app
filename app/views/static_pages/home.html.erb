@@ -3,7 +3,7 @@
   <h1><%= t "welcome" %></h1>
   <h2>
   <%= t "intro_home1" %>
-  <%= link_to t("rails_tutorial"), "http://www.railstutorial.org/" %>
+  <%= link_to t("rails_tutorial"), Settings.rails.host %>
   <%= t "intro_home2" %>
   </h2>
   <%= link_to t("sign_up"), static_pages_log_up_path, class: "btn btn-lg btn-primary" %>

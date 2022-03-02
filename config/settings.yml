@@ -1,0 +1,6 @@
+rails:
+  host: "http://www.railstutorial.org/"
+  book_host: "http://www.railstutorial.org/book"
+  help_host: "http://www.railstutorial.org/help"
+digit_6: 6
+digit_255: 255
