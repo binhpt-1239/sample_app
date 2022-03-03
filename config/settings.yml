@@ -2,5 +2,7 @@ rails:
   host: "http://www.railstutorial.org/"
   book_host: "http://www.railstutorial.org/book"
   help_host: "http://www.railstutorial.org/help"
+users:
+  user_url: "https://secure.gravatar.com/avatar/"
 digit_6: 6
 digit_255: 255
