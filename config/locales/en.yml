@@ -4,6 +4,7 @@ en:
     err: "Sign up fails"
     success: "Welcome to the Sample App"
     notfound: "Not found User"
+    log_in_invalid: "Invalid email/password combination"
   layouts:
     header:
       viet: "Vietnamese"
@@ -12,6 +13,10 @@ en:
       log_in: "Log In"
       help: "Help"
       app_name: "sample app"
+      profile: "Profile"
+      setting: "Settings"
+      log_out: "Log out"
+      account: "user"
     footer:
       about: "About"
       contact: "Contact"
@@ -44,6 +49,12 @@ en:
     new:
       title_log_up: "Log Up"
       intro_log_up: "Sign up now!"
+  sessions:
+    new:
+      remember_me: "Remember me on this computer"
+      log_in: "Log In"
+      new_user: "New user?"
+      intr_signup: "Sign up now!"
 
   activerecord:
     models:
