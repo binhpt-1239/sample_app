@@ -4,6 +4,7 @@ vi:
     err: "Đăng kí thất bại"
     success: "Chào mừng bạn đến với ứng dụng mẫu"
     notfound: "Không tìm thấy User"
+    log_in_invalid: "E-mail / mật khẩu không hợp lệ"
   layouts:
     header:
       viet: "Tiếng Việt"
@@ -12,6 +13,10 @@ vi:
       log_in: "Đăng nhập"
       help: "Hỗ trợ"
       app_name: "Dự án mẫu"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+      account: "Người dùng"
     footer:
       about: "Giới thiệu"
       contact: "Liên Hệ"
@@ -44,6 +49,12 @@ vi:
     new:
       title_log_up: "Đăng kí"
       intro_log_up: "Đăng kí ngay!"
+  sessions:
+    new:
+      remember_me: "Hãy nhớ tôi trên máy tính này!"
+      log_in: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      intr_signup: "Đăng ký ngay!"
 
   activerecord:
     models:

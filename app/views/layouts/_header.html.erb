@@ -3,17 +3,33 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <%= link_to t(".app_name"), static_pages_home_path , class: "navbar-brand text-danger", id: "logo" %>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item nav-link">
-            <%= link_to t(".home"), static_pages_home_path, class: "text-primary" %>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <%= link_to t(".home"), static_pages_home_path, class: "text-primary nav-link" %>
           </li>
-          <li class="nav-item nav-link">
-            <%= link_to t(".help"), static_pages_help_path, class: "text-primary" %>
+          <li class="nav-item">
+            <%= link_to t(".help"), static_pages_help_path, class: "text-primary nav-link" %>
           </li>
-          <li class="nav-item nav-link">
-            <%= link_to t(".log_in"), static_pages_log_in_path, class: "text-primary" %>
-          </li>
+          <% if logged_in? %>
+            <li class="dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                <%= t ".account" %>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item"><%= link_to t(".profile"), current_user %></li>
+                <li class="dropdown-item"><%= link_to t(".setting"), "#" %></li>
+                <li class="divider"></li>
+                <li class="dropdown-item">
+                  <%= link_to t(".log_out"), logout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li class="nav-item nav-link">
+              <%= link_to t(".log_in"), login_path, class: "text-primary" %>
+            </li>
+          <% end %>
         </ul>
         <ul class="navbar-nav ml-auto">
            <li class="nav-item nav-link">
@@ -22,7 +38,7 @@
            <li class="nav-item nav-link">
             <%= link_to t(".eng"), locale: :en %>
            </li>
-         </ul>
+        </ul>
       </div>
     </nav>
   </div>
