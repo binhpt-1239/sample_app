@@ -5,17 +5,20 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
-    redirect_to root_path if @user.nil?
+    return if @user
+
+    redirect_to root_path
     flash[:warning] = t "notification.notfound"
   end
 
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t "notification.success"
       redirect_to @user
     else
-      flash[:warning] = t "notification.err"
+      flash.now[:warning] = t "notification.err"
       render :new
     end
   end
