@@ -1,0 +1,13 @@
+<li class="row mt-2">
+  <div class="col-md-2"></div>
+  <div class="col-md-2"><%= gravatar_for user%></div>
+  <div class="col-md-2"><%= link_to user.name, user %></div>
+  <div class="col-md-2">
+    <% if currentuser_is_admin? user %>
+      | <%= link_to t(".delete"), user, method: :delete,
+                                  data: { confirm: I18n.t("notification.request_sure") } %>
+      | <%= link_to t(".update"), edit_user_path(user),
+                                  data: { confirm: I18n.t("notification.request_sure") } %>
+    <% end %>
+  </div>
+</li>
