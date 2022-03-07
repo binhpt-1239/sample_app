@@ -4,4 +4,8 @@ module UsersHelper
     gravatar_url = Settings.users.user_url + gravatar_id
     image_tag(gravatar_url, alt: user.name, class: "gravatar")
   end
+
+  def currentuser_is_admin? user
+    current_user.admin? && !current_user?(user)
+  end
 end

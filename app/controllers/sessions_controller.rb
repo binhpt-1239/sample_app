@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       login_succes user
+      redirect_back_or user
     else
       flash.now[:danger] = t "notification.log_in_invalid"
       render :new
@@ -21,7 +22,6 @@ class SessionsController < ApplicationController
   def login_succes user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
     flash[:success] = t "notification.success"
   end
 end

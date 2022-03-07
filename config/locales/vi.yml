@@ -5,6 +5,14 @@ vi:
     success: "Chào mừng bạn đến với ứng dụng mẫu"
     notfound: "Không tìm thấy User"
     log_in_invalid: "E-mail / mật khẩu không hợp lệ"
+    update: "Cập nhật hồ sơ"
+    not_update: "Không thể cập nhật"
+    destroy: "Đã xóa User"
+    not_destroy: "Xóa không thành công"
+    request_login: "Hãy đăng nhập."
+    request_sure: "Bạn có chắc?"
+    not_do: "Không thực hiện được"
+    not_admin: "Bạn không là Admin"
   layouts:
     header:
       viet: "Tiếng Việt"
@@ -16,7 +24,7 @@ vi:
       profile: "Hồ sơ"
       settings: "Cài đặt"
       log_out: "Đăng xuất"
-      account: "Người dùng"
+      account: "Danh sách người dùng"
     footer:
       about: "Giới thiệu"
       contact: "Liên Hệ"
@@ -49,6 +57,16 @@ vi:
     new:
       title_log_up: "Đăng kí"
       intro_log_up: "Đăng kí ngay!"
+    user:
+      delete: "Xóa"
+      update: "Cập nhật"
+    index:
+      all_user: "Tất cả người dùng"
+    edit:
+      title_update: "Edit user"
+      intro_update:  "Cập nhật thông tin của bạn"
+      update: "Cập nhật"
+      change: "Thay đổi"
   sessions:
     new:
       remember_me: "Hãy nhớ tôi trên máy tính này!"
@@ -64,5 +82,5 @@ vi:
         name: "Tên"
         email: "E-mail"
         password: "Mật khẩu"
-        confirmation: "Xác nhận Mật khẩu"
+        password_confirmation: "Xác nhận Mật khẩu"
         submit: "Tạo tài khoản của tôi"
