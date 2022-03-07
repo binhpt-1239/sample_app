@@ -5,6 +5,14 @@ en:
     success: "Welcome to the Sample App"
     notfound: "Not found User"
     log_in_invalid: "Invalid email/password combination"
+    update: "Profile updated"
+    not_update: "not updated"
+    destroy: "User deleted"
+    not_destroy: "Deleted not success"
+    request_login: "Please log in."
+    request_sure: "You sure?"
+    not_do: "Can not do it"
+    not_admin: "You is not Admin"
   layouts:
     header:
       viet: "Vietnamese"
@@ -16,7 +24,8 @@ en:
       profile: "Profile"
       setting: "Settings"
       log_out: "Log out"
-      account: "user"
+      account: "List User"
+
     footer:
       about: "About"
       contact: "Contact"
@@ -49,6 +58,16 @@ en:
     new:
       title_log_up: "Log Up"
       intro_log_up: "Sign up now!"
+    user:
+      delete: "Delete"
+      update: "Update"
+    index:
+      all_user: "All Users"
+    edit:
+      title_update: "Edit user"
+      intro_update:  "Update your profile"
+      update: "Update"
+      change: "Change"
   sessions:
     new:
       remember_me: "Remember me on this computer"
@@ -64,5 +83,5 @@ en:
         name: "Name"
         email: "Email"
         password: "Password"
-        confirmation: "Password Confirmation"
+        password_confirmation: "Password Confirmation"
         submit: "Create my account"
