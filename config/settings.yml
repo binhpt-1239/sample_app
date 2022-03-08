@@ -6,3 +6,5 @@ users:
   user_url: "https://secure.gravatar.com/avatar/"
 digit_6: 6
 digit_255: 255
+subject_activate_mail: "Account activation"
+subject_reset_pass_mail: "Password reset"
