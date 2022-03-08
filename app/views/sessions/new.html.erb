@@ -9,6 +9,7 @@
       <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label :password, t(User.human_attribute_name "password") %>
+      <%= link_to t(".forgot_password"), new_password_reset_path %>
       <%= f.password_field :password, class: "form-control" %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
@@ -16,7 +17,7 @@
         <span><%= t ".remember_me" %></span>
       <% end %>
       </br>
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit t(".log_in"), class: "btn btn-primary" %>
     <% end %>
 
     <p><%= t ".new_user" %><%= link_to t(".intr_signup"), signup_path %></p>

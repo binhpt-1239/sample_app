@@ -13,6 +13,24 @@ vi:
     request_sure: "Bạn có chắc?"
     not_do: "Không thực hiện được"
     not_admin: "Bạn không là Admin"
+    send_activate_mail: "Vui lòng kiểm tra email để kích hoạt tài khoản của bạn."
+    check_activate_mail: "Tài khoản chưa được kích hoạt. \n Kiểm tra email của bạn để tìm liên kết kích hoạt."
+    activate_mail: "Tài khoản đã được kích hoạt!"
+    invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+    send_reset_mail: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    not_correct_emails: "Không tìm thấy địa chỉ email"
+    not_empty: "không được để trống"
+    invalid_reset_pass: "Liên kết đặt lại mật khẩu không hợp lệ"
+    reset_pass_succes: "Mật khẩu đã được đặt lại."
+    unvalidate_pass: "Bỏ xác thực mật khẩu"
+    expired_password_reset: "Đặt lại mật khẩu đã hết hạn"
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit: "Gửi đi"
+    edit:
+      reset_password: "Đặt lại mật khẩu"
+      submit: "Gửi đi"
   layouts:
     header:
       viet: "Tiếng Việt"
@@ -73,7 +91,19 @@ vi:
       log_in: "Đăng nhập"
       new_user: "Người dùng mới?"
       intr_signup: "Đăng ký ngay!"
-
+      forgot_password: "(Quên mật khẩu)"
+  user_mailer:
+    account_activation:
+      app_name: "Ứng dụng mẫu "
+      intro1: "Xin chào"
+      intro2: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn: "
+      activate:  "Kích hoạt"
+    password_reset:
+      title_name: "Đặt lại mật khẩu"
+      intro1: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      intro2: "Liên kết này sẽ hết hạn sau hai giờ."
+      intro3: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+      reset_password:  "Đặt lại mật khẩu"
   activerecord:
     models:
       user: "User"
@@ -83,4 +113,4 @@ vi:
         email: "E-mail"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận Mật khẩu"
-        submit: "Tạo tài khoản của tôi"
+        submit: "Thực hiện"

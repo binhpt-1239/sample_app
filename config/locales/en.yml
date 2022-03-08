@@ -13,6 +13,24 @@ en:
     request_sure: "You sure?"
     not_do: "Can not do it"
     not_admin: "You is not Admin"
+    send_activate_mail: "Please check your email to activate your account."
+    check_activate_mail: "Account not activated.\nCheck your email for the activation link."
+    activate_mail: "Account activated!"
+    invalid_activation_link: "Invalid activation link"
+    send_reset_mail: "Email sent with password reset instructions"
+    not_correct_emails: "Email address not found"
+    not_empty: "can't be empty"
+    invalid_reset_pass: "Invalid reset link"
+    reset_pass_succes: "Password has been reset."
+    unvalidate_pass: "Password unvalidate"
+    expired_password_reset: "Password reset has expired"
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      reset_password: "Reset password"
+      submit: "Submit"
   layouts:
     header:
       viet: "Vietnamese"
@@ -25,7 +43,6 @@ en:
       setting: "Settings"
       log_out: "Log out"
       account: "List User"
-
     footer:
       about: "About"
       contact: "Contact"
@@ -74,7 +91,19 @@ en:
       log_in: "Log In"
       new_user: "New user?"
       intr_signup: "Sign up now!"
-
+      forgot_password: "(Forgot password)"
+  user_mailer:
+    account_activation:
+      app_name: "Sample App"
+      intro1: "Hi"
+      intro2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate:  "Activate"
+    password_reset:
+      title_name: "Password reset"
+      intro1: "To reset your password click the link below:"
+      intro2: "This link will expire in two hours."
+      intro3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      reset_password:  "Reset password"
   activerecord:
     models:
       user: "User"
@@ -84,4 +113,4 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Password Confirmation"
-        submit: "Create my account"
+        submit: "Submit"
