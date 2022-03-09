@@ -8,4 +8,8 @@ module UsersHelper
   def currentuser_is_admin? user
     current_user.admin? && !current_user?(user)
   end
+
+  def admin_or_your_micropost? user
+    current_user?(user) || current_user.admin?
+  end
 end

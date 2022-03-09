@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @pagy, @microposts = pagy @user.microposts.all, items: Settings.digit_6
     return if @user
 
     redirect_to root_path
@@ -67,16 +68,6 @@ class UsersController < ApplicationController
   def action_if_not_found_user
     redirect_to users_path
     flash[:danger] = t "notification.notfound"
-  end
-
-  def logged_in_user
-    action_if_not_logged_in unless logged_in?
-  end
-
-  def action_if_not_logged_in
-    store_location
-    flash[:danger] = t "notification.request_login"
-    redirect_to login_url
   end
 
   def correct_user

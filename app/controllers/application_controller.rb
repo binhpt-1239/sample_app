@@ -6,6 +6,17 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   private
+
+  def logged_in_user
+    action_if_not_logged_in unless logged_in?
+  end
+
+  def action_if_not_logged_in
+    store_location
+    flash[:danger] = t "notification.request_login"
+    redirect_to login_url
+  end
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
     locale = params[:locale].to_s.strip.to_sym

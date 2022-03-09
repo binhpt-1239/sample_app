@@ -6,7 +6,7 @@ en:
     notfound: "Not found User"
     log_in_invalid: "Invalid email/password combination"
     update: "Profile updated"
-    not_update: "not updated"
+    not_update: "Profile not updated"
     destroy: "User deleted"
     not_destroy: "Deleted not success"
     request_login: "Please log in."
@@ -24,6 +24,14 @@ en:
     reset_pass_succes: "Password has been reset."
     unvalidate_pass: "Password unvalidate"
     expired_password_reset: "Password reset has expired"
+    create_micropost_success: "Micropost created!"
+    create_micropost_fails: "Create Micropost fails!"
+    deleted_micropost: "Micropost deleted"
+    deleted_micropost_fails: "Micropost not deleted"
+    micropost_update: "Micropost updated"
+    micropost_not_update: "Micropost not updated"
+    not_found_micropost: "Not found micropost"
+    maximum_file: "Maximum file size is 5MB. Please choose a smaller file."
   password_resets:
     new:
       forgot_password: "Forgot password"
@@ -52,6 +60,10 @@ en:
     error_messages:
       str_error: "error"
       intro_err: "Sign up fails"
+    user_infor:
+      view_profile: "View my profile"
+    micropost_form:
+      write_micropost: "Compose new micropost..."
   static_pages:
     home:
       title_home: "Home"
@@ -60,6 +72,7 @@ en:
       home_rails_tutorial: "Ruby on Rails Tutorial"
       intro_home1: "This is the home page for the"
       intro_home2: "sample application."
+      micropost_feed: "Micropost Feed"
     help:
       title_help: "Help"
       intro_help1: "Get help on the Ruby on Rails Tutorial at the "
@@ -72,6 +85,9 @@ en:
       intro_log_in1: "This is 'Log In Form' for the"
       intro_log_in2: "sample application."
   users:
+    show:
+      micropost: "Microposts"
+      empty: "Micropost Feed empty"
     new:
       title_log_up: "Log Up"
       intro_log_up: "Sign up now!"
@@ -104,6 +120,12 @@ en:
       intro2: "This link will expire in two hours."
       intro3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
       reset_password:  "Reset password"
+  microposts:
+    micropost:
+      update: "Update"
+      delete: "Delete"
+      intro1: "Posted"
+      intro2: "ago"
   activerecord:
     models:
       user: "User"
