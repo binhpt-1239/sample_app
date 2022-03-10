@@ -4,7 +4,14 @@ rails:
   help_host: "http://www.railstutorial.org/help"
 users:
   user_url: "https://secure.gravatar.com/avatar/"
+static_pages:
+  home_url: "static_pages/home"
 digit_6: 6
 digit_255: 255
+digit_140: 140
+digit_400: 400
 subject_activate_mail: "Account activation"
 subject_reset_pass_mail: "Password reset"
+less_than_5MB: "should be less than 5MB"
+format_picture: ["jpg", "jpeg", "gif", "png"]
+format_end_file: "image/jpeg,image/gif,image/png"

@@ -24,6 +24,14 @@ vi:
     reset_pass_succes: "Mật khẩu đã được đặt lại."
     unvalidate_pass: "Bỏ xác thực mật khẩu"
     expired_password_reset: "Đặt lại mật khẩu đã hết hạn"
+    create_micropost_success: "Tạo bài viết thành công!"
+    create_micropost_fails: "Tạo bài viết không thành công!"
+    deleted_micropost: "Đã xóa bài viết"
+    deleted_micropost_fails: "Xóa bài viết không thành công!"
+    micropost_update: "Đã cập nhật bài viết"
+    micropost_not_update: "Bài viết chưa được cập nhật"
+    not_found_micropost: "Không tìm thấy bài viết"
+    maximum_file: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
   password_resets:
     new:
       forgot_password: "Quên mật khẩu"
@@ -52,6 +60,10 @@ vi:
     error_messages:
       str_error: "lỗi"
       intro_err: "Đăng kí thất bại"
+    user_infor:
+      view_profile: "Xem hồ sơ của tôi "
+    micropost_form:
+      write_micropost: "Soạn bài viết mới ..."
   static_pages:
     home:
       title_home: "Trang chủ"
@@ -60,6 +72,7 @@ vi:
       home_rails_tutorial: "Hướng dẫn sử dụng Ruby on Rails"
       intro_home1: "Đây là trang chủ của"
       intro_home2: "ứng dụng mẫu."
+      micropost_feed: "Dòng thời gian"
     help:
       title_help: "Help"
       intro_help1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại "
@@ -72,6 +85,9 @@ vi:
       intro_log_in1: "Đây là 'Biểu mẫu đăng nhập' cho "
       intro_log_in2: "ứng dụng mẫu."
   users:
+    show:
+      micropost: "Bài viết"
+      empty: "Dòng thời gian rỗng"
     new:
       title_log_up: "Đăng kí"
       intro_log_up: "Đăng kí ngay!"
@@ -104,6 +120,12 @@ vi:
       intro2: "Liên kết này sẽ hết hạn sau hai giờ."
       intro3: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
       reset_password:  "Đặt lại mật khẩu"
+  microposts:
+    micropost:
+      update: "Cập nhật"
+      delete: "Xóa"
+      intro1: "Đã đăng"
+      intro2: "trước"
   activerecord:
     models:
       user: "User"
