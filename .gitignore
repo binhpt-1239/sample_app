@@ -27,9 +27,11 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+/public
 /public/packs
 /public/packs-test
 /public/uploads
+/public/uploads/micropost
 /node_modules
 /yarn-error.log
 yarn-debug.log*
