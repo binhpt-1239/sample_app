@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(create new)
   before_action :load_user, except: %i(create new index)
-  before_action :correct_user, only: %i(edit update show)
-  before_action :admin_user, only: %i(destroy index)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
 
   def new
     @user = User.new
@@ -51,6 +51,18 @@ class UsersController < ApplicationController
       flash[:warning] = t "notification.not_destroy"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "following"
+    @pagy, @users = pagy @user.following, items: Settings.digit_6
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @pagy, @users = pagy @user.followers, items: Settings.digit_6
+    render "show_follow"
   end
 
   private

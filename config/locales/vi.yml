@@ -1,5 +1,7 @@
 vi:
   title: "Dự án mẫu Ruby on Rails"
+  followers: "Người theo dõi "
+  following: "Đang theo dõi "
   notification:
     err: "Đăng kí thất bại"
     success: "Chào mừng bạn đến với ứng dụng mẫu"
@@ -32,6 +34,12 @@ vi:
     micropost_not_update: "Bài viết chưa được cập nhật"
     not_found_micropost: "Không tìm thấy bài viết"
     maximum_file: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
+    follow_success: "Theo dõi thành công"
+    unfollow_success: "Bỏ theo dõi thành công"
+    were_followed: "Người dùng đã được theo dõi"
+    were_unfollowed: "Người dùng đã hủy theo dõi"
+    is_nil: "Người dùng nil"
+    fails: "Không thành công"
   password_resets:
     new:
       forgot_password: "Quên mật khẩu"
@@ -64,6 +72,9 @@ vi:
       view_profile: "Xem hồ sơ của tôi "
     micropost_form:
       write_micropost: "Soạn bài viết mới ..."
+    stats:
+      following: "đang theo dõi"
+      followers: "theo dõi"
   static_pages:
     home:
       title_home: "Trang chủ"
@@ -85,6 +96,9 @@ vi:
       intro_log_in1: "Đây là 'Biểu mẫu đăng nhập' cho "
       intro_log_in2: "ứng dụng mẫu."
   users:
+    show_follow:
+      microposts: "Bài viết:"
+      view_profile: "Xem hồ sơ của tôi "
     show:
       micropost: "Bài viết"
       empty: "Dòng thời gian rỗng"
@@ -101,6 +115,10 @@ vi:
       intro_update:  "Cập nhật thông tin của bạn"
       update: "Cập nhật"
       change: "Thay đổi"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
   sessions:
     new:
       remember_me: "Hãy nhớ tôi trên máy tính này!"

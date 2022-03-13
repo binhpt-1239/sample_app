@@ -12,9 +12,7 @@
             <%= link_to t(".help"), static_pages_help_path, class: "text-primary nav-link" %>
           </li>
           <% if logged_in? %>
-            <% if current_user.admin? %>
-              <li class="nav-item"><%= link_to t(".account"), users_path, class:"text-primary nav-link" %></li>
-            <% end %>
+            <li class="nav-item"><%= link_to t(".account"), users_path, class:"text-primary nav-link" %></li>
             <li class="dropdown">
               <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                 <%= current_user.name %>

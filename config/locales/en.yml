@@ -1,5 +1,7 @@
 en:
   title: "Ruby on Rails sample app"
+  followers: "Followers"
+  following: "Following"
   notification:
     err: "Sign up fails"
     success: "Welcome to the Sample App"
@@ -32,6 +34,12 @@ en:
     micropost_not_update: "Micropost not updated"
     not_found_micropost: "Not found micropost"
     maximum_file: "Maximum file size is 5MB. Please choose a smaller file."
+    follow_success: "Follow success"
+    unfollow_success: "Unfollow success"
+    were_followed: "User were followed"
+    were_unfollowed: "User were unfollowed"
+    is_nil: "User is nil"
+    fails: "Fails"
   password_resets:
     new:
       forgot_password: "Forgot password"
@@ -64,6 +72,9 @@ en:
       view_profile: "View my profile"
     micropost_form:
       write_micropost: "Compose new micropost..."
+    stats:
+      following: "following"
+      followers: "followers"
   static_pages:
     home:
       title_home: "Home"
@@ -85,6 +96,9 @@ en:
       intro_log_in1: "This is 'Log In Form' for the"
       intro_log_in2: "sample application."
   users:
+    show_follow:
+      microposts: "Microposts:"
+      view_profile: "view my profile"
     show:
       micropost: "Microposts"
       empty: "Micropost Feed empty"
@@ -101,6 +115,10 @@ en:
       intro_update:  "Update your profile"
       update: "Update"
       change: "Change"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "UnFollow"
   sessions:
     new:
       remember_me: "Remember me on this computer"
